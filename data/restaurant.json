@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Test",
+    "address": "TestStreet5, TestCity1",
+    "cuisine": "Mexican",
+    "website": "http://mexicanfood.com",
+    "description": "It is gorgeous!"
+  }
+]
