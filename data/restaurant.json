@@ -1,23 +1,21 @@
-[
-  {
-    "name": "Test",
-    "address": "TestStreet5, TestCity1",
-    "cuisine": "Mexican",
-    "website": "http://mexicanfood.com",
-    "description": "It is gorgeous!"
-  },
-  {
-    "name": "Test  2",
-    "address": "TestStreet10, TestCity2",
-    "cuisine": "Spanish",
-    "website": "http://spanishfood.com",
-    "description": "Està muy bueno!"
-  },
-  {
-    "name": "Test 3",
-    "address": "TestStreet15, TestCity3",
-    "cuisine": "Italian",
-    "website": "http://italianfood.com",
-    "description": "It is perfect!"
-  }
-]
+[{
+  "name": "Test",
+  "address": "TestStreet5, TestCity1",
+  "cuisine": "Mexican",
+  "website": "http://mexicanfood.com",
+  "description": "It is gorgeous!"
+},
+{
+  "name": "Test  2",
+  "address": "TestStreet10, TestCity2",
+  "cuisine": "Spanish",
+  "website": "http://spanishfood.com",
+  "description": "Està muy bueno!"
+},
+{
+  "name": "Test 3",
+  "address": "TestStreet15, TestCity3",
+  "cuisine": "Italian",
+  "website": "http://italianfood.com",
+  "description": "It is perfect!"
+}]
