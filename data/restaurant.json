@@ -1,21 +1,34 @@
-[{
-  "name": "Test",
-  "address": "TestStreet5, TestCity1",
-  "cuisine": "Mexican",
-  "website": "http://mexicanfood.com",
-  "description": "It is gorgeous!"
-},
-{
-  "name": "Test  2",
-  "address": "TestStreet10, TestCity2",
-  "cuisine": "Spanish",
-  "website": "http://spanishfood.com",
-  "description": "Està muy bueno!"
-},
-{
-  "name": "Test 3",
-  "address": "TestStreet15, TestCity3",
-  "cuisine": "Italian",
-  "website": "http://italianfood.com",
-  "description": "It is perfect!"
-}]
+[
+  {
+    "id": "r1",
+    "name": "Test",
+    "address": "TestStreet5, TestCity1",
+    "cuisine": "Mexican",
+    "website": "http://mexicanfood.com",
+    "description": "It is gorgeous!"
+  },
+  {
+    "id": "r2",
+    "name": "Test  2",
+    "address": "TestStreet10, TestCity2",
+    "cuisine": "Spanish",
+    "website": "http://spanishfood.com",
+    "description": "Està muy bueno!"
+  },
+  {
+    "id": "r3",
+    "name": "Test 3",
+    "address": "TestStreet15, TestCity3",
+    "cuisine": "Italian",
+    "website": "http://italianfood.com",
+    "description": "It is perfect!"
+  },
+  {
+    "name": "Test4",
+    "address": "Munich Street6, Munich",
+    "cuisine": "German",
+    "website": "http://munich-awesome.com",
+    "description": "It is seriously fascinating!",
+    "id": "1c305440-4ff0-4ea6-984d-663c68740ca5"
+  }
+]
