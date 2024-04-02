@@ -29,6 +29,11 @@ app.get('/restaurants', function (req, res) {
   res.render('restaurants', {numberOfRestaurants: storedRestaurants.length, restaurants: storedRestaurants});
 });
 
+app.get('/restaurants/:id', function (req, res) {
+  const restaurantId = req.params.id;
+  res.render('restaurant-details', { rid: restaurantId });
+});
+
 app.get('/recommend', function (req, res) {
   // const htmlFilePath = path.join(__dirname, 'views', 'recommend.html');
   // res.sendFile(htmlFilePath);
