@@ -10,6 +10,14 @@ router.get('/restaurants', function (req, res) {
   // res.sendFile(htmlFilePath);
   const storedRestaurants = resData.getStoredRestaurants();
 
+  storedRestaurants.sort(function(resA, resB) {
+    if (resA.cuisine > resB.cuisine) {
+      return 1
+    } else {
+      return -1
+    }
+  });
+
   res.render('restaurants', {
     numberOfRestaurants: storedRestaurants.length,
     restaurants: storedRestaurants,
