@@ -8,19 +8,35 @@ const router = express.Router();
 router.get('/restaurants', function (req, res) {
   // const htmlFilePath = path.join(__dirname, 'views', 'restaurants.html');
   // res.sendFile(htmlFilePath);
+
+  let order = req.query.order;
+  let nextOrder = 'desc';
+
+  if (order !== 'asc' && order !== 'desc') {
+    order = 'asc';
+  }
+
+  if (order === 'desc') {
+    nextOrder = 'asc';
+  }
+
   const storedRestaurants = resData.getStoredRestaurants();
 
-  storedRestaurants.sort(function(resA, resB) {
-    if (resA.cuisine > resB.cuisine) {
-      return 1
+  storedRestaurants.sort(function (resA, resB) {
+    if (
+      (order === 'asc' && resA.name > resB.name) ||
+      (order === 'desc' && resB.name > resA.name)
+    ) {
+      return 1;
     } else {
-      return -1
+      return -1;
     }
   });
 
   res.render('restaurants', {
     numberOfRestaurants: storedRestaurants.length,
     restaurants: storedRestaurants,
+    nextOrder: nextOrder
   });
 });
 
